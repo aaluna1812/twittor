@@ -1,9 +1,11 @@
 
-$(document).ready(function() {
+let url 
+let swLocation
+
+window.addEventListener( 'load', () => {
     let url = window.location.href
     let swLocation = "/twittor/";
-})
-
+} )
 
 
 // IMPORTS
