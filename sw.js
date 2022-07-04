@@ -2,10 +2,10 @@
 let url 
 let swLocation
 
-window.addEventListener( 'load', () => {
+function setLocation(){
     let url = window.location.href
     let swLocation = "/twittor/";
-} )
+}
 
 
 // IMPORTS
