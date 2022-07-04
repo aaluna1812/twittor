@@ -6,15 +6,13 @@ function setLocation(){
     let url = window.location.href
     let swLocation = "/twittor/";
 }
-
-
-// IMPORTS
-importScripts( swLocation + 'js/sw-utils.js' )
-
-
+console.log({swLocation})
 if ( url.includes("localhost") ) {
     swLocation = "/FORMACIO/PWA/06-twittor/"
 }
+
+// IMPORTS
+importScripts( swLocation + 'js/sw-utils.js' )
 
 const STATIC_CACHE = "static-v2";
 const DYNAMIC_CACHE = "dynamic-v1";
