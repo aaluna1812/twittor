@@ -1,8 +1,9 @@
 // IMPORTS
-importScripts( '/FORMACIO/PWA/06-twittor/js/sw-utils.js' )
-
 let url = window.location.href
 let swLocation = "/twittor/";
+
+importScripts( swLocation + 'sw-utils.js' )
+
 
 if ( url.includes("localhost") ) {
     swLocation = "/FORMACIO/PWA/06-twittor/"
