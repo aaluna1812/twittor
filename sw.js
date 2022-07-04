@@ -1,7 +1,12 @@
-// IMPORTS
-let url = window.location.href
-let swLocation = "/twittor/";
 
+$(document).ready(function() {
+    let url = window.location.href
+    let swLocation = "/twittor/";
+})
+
+
+
+// IMPORTS
 importScripts( swLocation + 'sw-utils.js' )
 
 
