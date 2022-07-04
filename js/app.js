@@ -1,6 +1,12 @@
+let url = window.location.href
+let swLocation = "/twittor";
+
 
 if ( navigator.serviceWorker ) {
-    navigator.serviceWorker.register( "/FORMACIO/PWA/06-twittor/sw.js" )
+    if ( url.includes("localhost") ) {
+        swLocation = "/FORMACIO/PWA/06-twittor/sw.js"
+    }
+    navigator.serviceWorker.register( swLocation )
 }
 
 

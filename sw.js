@@ -1,31 +1,37 @@
 // IMPORTS
 importScripts( '/FORMACIO/PWA/06-twittor/js/sw-utils.js' )
 
+let url = window.location.href
+let swLocation = "/twittor/";
+
+if ( url.includes("localhost") ) {
+    swLocation = "/FORMACIO/PWA/06-twittor/"
+}
 
 const STATIC_CACHE = "static-v2";
 const DYNAMIC_CACHE = "dynamic-v1";
 const INMUTABLE_CACHE = "inmutable-v1";
 
 const APP_SHELL = [
-    '/FORMACIO/PWA/06-twittor/',
-    '/FORMACIO/PWA/06-twittor/index.html',
-    '/FORMACIO/PWA/06-twittor/css/style.css',
-    '/FORMACIO/PWA/06-twittor/img/favicon.ico',
-    '/FORMACIO/PWA/06-twittor/img/avatars/hulk.jpg',
-    '/FORMACIO/PWA/06-twittor/img/avatars/ironman.jpg',
-    '/FORMACIO/PWA/06-twittor/img/avatars/spiderman.jpg',
-    '/FORMACIO/PWA/06-twittor/img/avatars/thor.jpg',
-    '/FORMACIO/PWA/06-twittor/img/avatars/wolverine.jpg',
-    '/FORMACIO/PWA/06-twittor/js/app.js',
-    '/FORMACIO/PWA/06-twittor/js/sw-utils.js',
+    //swLocation,
+    swLocation + 'index.html',
+    swLocation + 'css/style.css',
+    swLocation + 'img/favicon.ico',
+    swLocation + 'img/avatars/hulk.jpg',
+    swLocation + 'img/avatars/ironman.jpg',
+    swLocation + 'img/avatars/spiderman.jpg',
+    swLocation + 'img/avatars/thor.jpg',
+    swLocation + 'img/avatars/wolverine.jpg',
+    swLocation + 'js/app.js',
+    swLocation + 'js/sw-utils.js',
 ];
 
 const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    '/FORMACIO/PWA/06-twittor/css/animate.css',
-    '/FORMACIO/PWA/06-twittor/js/libs/jquery.js',
+    swLocation + 'cssanimate.css',
+    swLocation + 'jslibs/jquery.js',
 ];
 
 self.addEventListener( 'install', e => {
