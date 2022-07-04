@@ -9,7 +9,7 @@ function setLocation(){
 
 
 // IMPORTS
-importScripts( swLocation + 'sw-utils.js' )
+importScripts( swLocation + 'js/sw-utils.js' )
 
 
 if ( url.includes("localhost") ) {
