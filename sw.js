@@ -15,24 +15,38 @@ const INMUTABLE_CACHE = "inmutable-v1";
 
 const APP_SHELL = [
     //swLocation,
-    swLocation + 'index.html',
-    swLocation + 'css/style.css',
-    swLocation + 'img/favicon.ico',
-    swLocation + 'img/avatars/hulk.jpg',
-    swLocation + 'img/avatars/ironman.jpg',
-    swLocation + 'img/avatars/spiderman.jpg',
-    swLocation + 'img/avatars/thor.jpg',
-    swLocation + 'img/avatars/wolverine.jpg',
-    swLocation + 'js/app.js',
-    swLocation + 'js/sw-utils.js',
+    // swLocation + 'index.html',
+    // swLocation + 'css/style.css',
+    // swLocation + 'img/favicon.ico',
+    // swLocation + 'img/avatars/hulk.jpg',
+    // swLocation + 'img/avatars/ironman.jpg',
+    // swLocation + 'img/avatars/spiderman.jpg',
+    // swLocation + 'img/avatars/thor.jpg',
+    // swLocation + 'img/avatars/wolverine.jpg',
+    // swLocation + 'js/app.js',
+    // swLocation + 'js/sw-utils.js',
+
+    'index.html',
+    'css/style.css',
+    'img/favicon.ico',
+    'img/avatars/hulk.jpg',
+    'img/avatars/ironman.jpg',
+    'img/avatars/spiderman.jpg',
+    'img/avatars/thor.jpg',
+    'img/avatars/wolverine.jpg',
+    'js/app.js',
+    'js/sw-utils.js',
 ];
 
 const APP_SHELL_INMUTABLE = [
     'https://fonts.googleapis.com/css?family=Quicksand:300,400',
     'https://fonts.googleapis.com/css?family=Lato:400,300',
     'https://use.fontawesome.com/releases/v5.3.1/css/all.css',
-    swLocation + 'cssanimate.css',
-    swLocation + 'jslibs/jquery.js',
+    // swLocation + 'cssanimate.css',
+    // swLocation + 'jslibs/jquery.js',
+
+    'css/animate.css',
+    'js/libs/jquery.js',
 ];
 
 self.addEventListener( 'install', e => {
